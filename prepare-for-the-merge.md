@@ -20,7 +20,7 @@ Here are the clients that are ready for the merge on Mainnet and their version. 
 - [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/): v22.8.1 (or later)
 - [Lighthouse](https://lighthouse.sigmaprime.io/): v3.0.0 (or later)
 - [Prysm](https://prysmaticlabs.com/): v3.0.0 (or later)
-- [Nimbus](https://nimbus.team/): v22.8.1 (or later)
+- [Nimbus](https://nimbus.team/): v22.8.0 (or later)
 - [Lodestar](https://lodestar.chainsafe.io/): v1.0.0 (or later)
 
 ## Why would you want to prepare for the Merge?
@@ -284,7 +284,7 @@ And restart the service(s) you changed: `sudo systemctl restart SERVICENAME`
 When a new version is released, you can update mev-boost.
 
 ```console
-$ CGO_CFLAGS=-"O -D__BLST_PORTABLE__" go install github.com/flashbots/mev-boost@latest
+$ CGO_CFLAGS="-O -D__BLST_PORTABLE__" go install github.com/flashbots/mev-boost@latest
 $ sudo cp ~/go/bin/mev-boost /usr/local/bin
 $ sudo chown mevboost:mevboost /usr/local/bin/mev-boost
 ```
